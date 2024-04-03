@@ -10,14 +10,13 @@ public class GroundTransportation extends Transport
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private String licensePlate;
     private static double honorFee = 0.3;
-    private double fees;
     /**
      * Construtor para objetos da classe GroundTransportation
      */
     public GroundTransportation()
     {
         super();
-        this.fees = fees * honorFee;
+        setFees(honorFee);
     }
 
    

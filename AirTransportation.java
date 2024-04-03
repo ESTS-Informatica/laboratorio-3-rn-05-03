@@ -9,12 +9,11 @@ public class AirTransportation extends Transport{
     private String name;
     private int numberOfContainers;
     private static double honorFee = 0.4;
-    private double fees;
   public AirTransportation(){
       super();
       this.name = "";
       this.numberOfContainers = 0;
-      this.fees = fees * honorFee;
+      setFees(honorFee);
     }
   public AirTransportation(String name, int numberOfContainers){
       super();
